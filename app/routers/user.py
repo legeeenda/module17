@@ -4,7 +4,7 @@ from app.backend.db_depends import get_db  # функция подключени
 from app.models import User, Task
 from app.schemes import CreateUser, UpdateUser
 from sqlalchemy import insert, select, update, delete  # функции работы с записями
-from slugify import slugify  # функция создания slug-строки
+from slugify import slugify
 from typing import Annotated, Sequence
 
 router = APIRouter(prefix="/user", tags=["user"])
